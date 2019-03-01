@@ -4,160 +4,176 @@
     <meta charset="utf-8" />
     <title>Survey Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Let us know how we can improve freeCodeCamp</p>
-    <form id="survey-form">
-      <label id="name-label" for="name">* Name:</label>
-      <input
-        id="name"
-        type="text"
-        name="name"
-        required
-        placeholder="Enter your name"
-      /><br />
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Let us know how we can improve freeCodeCamp</p>
+    </header>
 
-      <label id="email-label" for="email">* Email:</label>
-      <input
-        id="email"
-        type="email"
-        name="email"
-        required
-        placeholder="Enter your email"
-      /><br />
-
-      <label id="number-label" for="number">* Age:</label>
-      <input
-        id="number"
-        type="number"
-        name="age"
-        min="14"
-        max="75"
-        placeholder="Age"
-      /><br />
-
-      <label for="dropdown"
-        >Which option best describes your current role?</label
-      >
-      <select id="dropdown">
-        <option value="">Select an option</option>
-        <option value="student">Student</option>
-        <option value="full_time_job">Full Time Job</option>
-        <option value="full_time_leaner">Full Time Leaner</option>
-        <option value="prefer_not_to_stay">Prefer not to stay</option>
-        <option value="other">Other</option>
-      </select>
-
-      <fieldset>
-        <legend>
-          * How likely is that you would recommend freeCodeCamp to a friend?
-        </legend>
-
-        <input type="radio" id="definitely" name="rec-opt" value="definitely" />
-        <label for="definitely">Definitely</label><br />
-
-        <input type="radio" id="maybe" name="rec-opt" value="maybe" />
-        <label for="maybe">Maybe</label><br />
-
-        <input type="radio" id="not-sure" name="rec-opt" value="not_sure" />
-        <label for="not-sure">Not sure</label>
-      </fieldset>
-
-      <label for="fcc_dropdown">What do you like most in FCC:</label>
-      <select id="fcc_dropdown">
-        <option value="">Select an option</option>
-        <option value="challenges">Challenges</option>
-        <option value="projects">Projects</option>
-        <option value="community">Community</option>
-        <option value="open_source">Open source</option>
-      </select>
-
-      <fieldset>
-        <legend>
-          Things that should be improved in the future (Check all that apply):
-        </legend>
-
+    <main>
+      <form id="survey-form">
+        <label id="name-label" for="name">* Name:</label>
         <input
-          type="checkbox"
-          id="front-end"
-          name="improve"
-          value="front-end"
-        />
-        <label for="front-end">Front-end Projects</label><br />
+          id="name"
+          type="text"
+          name="name"
+          required
+          placeholder="Enter your name"
+        /><br />
 
-        <input type="checkbox" id="back-end" name="improve" value="back-end" />
-        <label for="back-end">Back-end Projects</label><br />
-
+        <label id="email-label" for="email">* Email:</label>
         <input
-          type="checkbox"
-          id="data-visualization"
-          name="improve"
-          value="data-visualization"
-        />
-        <label for="data-visualization">Data Visualization</label><br />
+          id="email"
+          type="email"
+          name="email"
+          required
+          placeholder="Enter your email"
+        /><br />
 
+        <label id="number-label" for="number">* Age:</label>
         <input
-          type="checkbox"
-          id="challenges"
-          name="improve"
-          value="challenges"
-        />
-        <label for="challenges">Challenges</label><br />
+          id="number"
+          type="number"
+          name="age"
+          min="14"
+          max="75"
+          placeholder="Age"
+        /><br />
 
-        <input
-          type="checkbox"
-          id="open-source-community"
-          name="improve"
-          value="open-source-community"
-        />
-        <label for="open-source-community">Open Source Community</label><br />
+        <label for="dropdown"
+          >Which option best describes your current role?</label
+        >
+        <select id="dropdown">
+          <option value="">Select an option</option>
+          <option value="student">Student</option>
+          <option value="full_time_job">Full Time Job</option>
+          <option value="full_time_leaner">Full Time Leaner</option>
+          <option value="prefer_not_to_stay">Prefer not to stay</option>
+          <option value="other">Other</option>
+        </select>
 
-        <input
-          type="checkbox"
-          id="gitter-help-rooms"
-          name="improve"
-          value="gitter-help-rooms"
-        />
-        <label for="gitter-help-rooms">Gitter help rooms</label><br />
+        <fieldset>
+          <legend>
+            * How likely is that you would recommend freeCodeCamp to a friend?
+          </legend>
 
-        <input type="checkbox" id="videos" name="improve" value="videos" />
-        <label for="videos">Videos</label><br />
+          <input
+            type="radio"
+            id="definitely"
+            name="rec-opt"
+            value="definitely"
+          />
+          <label for="definitely">Definitely</label><br />
 
-        <input
-          type="checkbox"
-          id="city-meetups"
-          name="improve"
-          value="city-meetups"
-        />
-        <label for="city-meetups">City Meetups</label><br />
+          <input type="radio" id="maybe" name="rec-opt" value="maybe" />
+          <label for="maybe">Maybe</label><br />
 
-        <input type="checkbox" id="wiki" name="improve" value="wiki" />
-        <label for="wiki">Wiki</label><br />
+          <input type="radio" id="not-sure" name="rec-opt" value="not_sure" />
+          <label for="not-sure">Not sure</label>
+        </fieldset>
 
-        <input type="checkbox" id="forum" name="improve" value="forum" />
-        <label for="forum">Forum</label><br />
+        <label for="fcc_dropdown">What do you like most in FCC:</label>
+        <select id="fcc_dropdown">
+          <option value="">Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="open_source">Open source</option>
+        </select>
 
-        <input
-          type="checkbox"
-          id="additional-courses"
-          name="improve"
-          value="additional-courses"
-        />
-        <label for="additional-courses">Additional Courses</label>
-      </fieldset>
+        <fieldset>
+          <legend>
+            Things that should be improved in the future (Check all that apply):
+          </legend>
 
-      <label for="comment">Any Comments or Suggestions?</label>
-      <textarea
-        name="name"
-        id="comment"
-        rows="8"
-        cols="80"
-        placeholder="Enter your comment here..."
-      ></textarea>
+          <input
+            type="checkbox"
+            id="front-end"
+            name="improve"
+            value="front-end"
+          />
+          <label for="front-end">Front-end Projects</label><br />
 
-      <button type="submit" id="submit" value="submit">Submit</button>
-    </form>
+          <input
+            type="checkbox"
+            id="back-end"
+            name="improve"
+            value="back-end"
+          />
+          <label for="back-end">Back-end Projects</label><br />
+
+          <input
+            type="checkbox"
+            id="data-visualization"
+            name="improve"
+            value="data-visualization"
+          />
+          <label for="data-visualization">Data Visualization</label><br />
+
+          <input
+            type="checkbox"
+            id="challenges"
+            name="improve"
+            value="challenges"
+          />
+          <label for="challenges">Challenges</label><br />
+
+          <input
+            type="checkbox"
+            id="open-source-community"
+            name="improve"
+            value="open-source-community"
+          />
+          <label for="open-source-community">Open Source Community</label><br />
+
+          <input
+            type="checkbox"
+            id="gitter-help-rooms"
+            name="improve"
+            value="gitter-help-rooms"
+          />
+          <label for="gitter-help-rooms">Gitter help rooms</label><br />
+
+          <input type="checkbox" id="videos" name="improve" value="videos" />
+          <label for="videos">Videos</label><br />
+
+          <input
+            type="checkbox"
+            id="city-meetups"
+            name="improve"
+            value="city-meetups"
+          />
+          <label for="city-meetups">City Meetups</label><br />
+
+          <input type="checkbox" id="wiki" name="improve" value="wiki" />
+          <label for="wiki">Wiki</label><br />
+
+          <input type="checkbox" id="forum" name="improve" value="forum" />
+          <label for="forum">Forum</label><br />
+
+          <input
+            type="checkbox"
+            id="additional-courses"
+            name="improve"
+            value="additional-courses"
+          />
+          <label for="additional-courses">Additional Courses</label>
+        </fieldset>
+
+        <label for="comment">Any Comments or Suggestions?</label>
+        <textarea
+          id="comment"
+          name="user-comment"
+          rows="8"
+          cols="80"
+          placeholder="Enter your comment here..."
+        ></textarea>
+
+        <button type="submit" id="submit" value="submit">Submit</button>
+      </form>
+    </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
