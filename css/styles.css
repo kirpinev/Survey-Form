@@ -38,7 +38,7 @@ form {
 
 label {
   display: block;
-  padding: 8px 8px 15px 8px;
+  padding: 8px 8px 15px 0;
   font-size: 20px;
 }
 
@@ -99,7 +99,7 @@ input[type="number"] {
 
 /* Legend styles */
 legend {
-  padding: 8px;
+  padding: 8px 8px 8px 0;
 }
 
 /* Textarea styles */
@@ -119,4 +119,27 @@ button {
 button:hover {
   background-color: white;
   color: #1565c0;
+}
+
+@media (min-width: 768px) {
+  form {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  .col-30 {
+    float: left;
+    width: 30%;
+  }
+
+  .col-70 {
+    float: right;
+    width: 70%;
+  }
+
+  .clearfix {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
