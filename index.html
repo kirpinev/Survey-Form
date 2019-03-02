@@ -19,20 +19,20 @@
 
     <main>
       <form id="survey-form">
-        <!-- <div class="clearfix"> -->
-        <div class="col-30">
-          <label id="name-label" for="name">Name:</label>
+        <div class="clearfix">
+          <div class="col-30">
+            <label id="name-label" for="name">Name:</label>
+          </div>
+          <div class="col-70">
+            <input
+              id="name"
+              type="text"
+              name="name"
+              required
+              placeholder="Enter your name"
+            />
+          </div>
         </div>
-        <div class="col-70">
-          <input
-            id="name"
-            type="text"
-            name="name"
-            required
-            placeholder="Enter your name"
-          />
-        </div>
-        <!-- </div> -->
 
         <div class="clearfix">
           <div class="col-30">
@@ -49,29 +49,42 @@
           </div>
         </div>
 
-        <label id="number-label" for="number">Age:</label>
-        <input
-          id="number"
-          type="number"
-          name="age"
-          min="14"
-          max="75"
-          placeholder="Age"
-        /><br />
-
-        <div>
-          <label for="dropdown"
-            >Which option best describes your current role?</label
-          >
-          <select id="dropdown">
-            <option value="">Select an option</option>
-            <option value="student">Student</option>
-            <option value="full_time_job">Full Time Job</option>
-            <option value="full_time_leaner">Full Time Leaner</option>
-            <option value="prefer_not_to_stay">Prefer not to stay</option>
-            <option value="other">Other</option>
-          </select>
+        <div class="clearfix">
+          <div class="col-30">
+            <label id="number-label" for="number">Age:</label>
+          </div>
+          <div class="col-70">
+            <input
+              id="number"
+              type="number"
+              name="age"
+              min="14"
+              max="75"
+              placeholder="Age"
+            />
+          </div>
         </div>
+
+        <!-- <div> -->
+        <div class="clearfix">
+          <div class="col-40">
+            <label for="dropdown"
+              >Which option best describes your current role?</label
+            >
+          </div>
+
+          <div class="col-50">
+            <select id="dropdown">
+              <option value="">Select an option</option>
+              <option value="student">Student</option>
+              <option value="full_time_job">Full Time Job</option>
+              <option value="full_time_leaner">Full Time Leaner</option>
+              <option value="prefer_not_to_stay">Prefer not to stay</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <!-- </div> -->
 
         <fieldset>
           <legend>
@@ -93,14 +106,20 @@
           <label for="not-sure" class="label-inline">Not sure</label>
         </fieldset>
 
-        <label for="fcc_dropdown">What do you like most in FCC:</label>
-        <select id="fcc_dropdown">
-          <option value="">Select an option</option>
-          <option value="challenges">Challenges</option>
-          <option value="projects">Projects</option>
-          <option value="community">Community</option>
-          <option value="open_source">Open source</option>
-        </select>
+        <div class="clearfix">
+          <div class="col-40">
+            <label for="fcc_dropdown">What do you like most in FCC:</label>
+          </div>
+          <div class="col-50">
+            <select id="fcc_dropdown">
+              <option value="">Select an option</option>
+              <option value="challenges">Challenges</option>
+              <option value="projects">Projects</option>
+              <option value="community">Community</option>
+              <option value="open_source">Open source</option>
+            </select>
+          </div>
+        </div>
 
         <fieldset>
           <legend>
