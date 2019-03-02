@@ -4,7 +4,12 @@
     <meta charset="utf-8" />
     <title>Survey Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -14,7 +19,7 @@
 
     <main>
       <form id="survey-form">
-        <label id="name-label" for="name">* Name:</label>
+        <label id="name-label" for="name">Name:</label>
         <input
           id="name"
           type="text"
@@ -23,7 +28,7 @@
           placeholder="Enter your name"
         /><br />
 
-        <label id="email-label" for="email">* Email:</label>
+        <label id="email-label" for="email">Email:</label>
         <input
           id="email"
           type="email"
@@ -32,7 +37,7 @@
           placeholder="Enter your email"
         /><br />
 
-        <label id="number-label" for="number">* Age:</label>
+        <label id="number-label" for="number">Age:</label>
         <input
           id="number"
           type="number"
@@ -42,17 +47,19 @@
           placeholder="Age"
         /><br />
 
-        <label for="dropdown"
-          >Which option best describes your current role?</label
-        >
-        <select id="dropdown">
-          <option value="">Select an option</option>
-          <option value="student">Student</option>
-          <option value="full_time_job">Full Time Job</option>
-          <option value="full_time_leaner">Full Time Leaner</option>
-          <option value="prefer_not_to_stay">Prefer not to stay</option>
-          <option value="other">Other</option>
-        </select>
+        <div>
+          <label for="dropdown"
+            >Which option best describes your current role?</label
+          >
+          <select id="dropdown">
+            <option value="">Select an option</option>
+            <option value="student">Student</option>
+            <option value="full_time_job">Full Time Job</option>
+            <option value="full_time_leaner">Full Time Leaner</option>
+            <option value="prefer_not_to_stay">Prefer not to stay</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
 
         <fieldset>
           <legend>
@@ -65,13 +72,13 @@
             name="rec-opt"
             value="definitely"
           />
-          <label for="definitely">Definitely</label><br />
+          <label for="definitely" class="label-inline">Definitely</label><br />
 
           <input type="radio" id="maybe" name="rec-opt" value="maybe" />
-          <label for="maybe">Maybe</label><br />
+          <label for="maybe" class="label-inline">Maybe</label><br />
 
           <input type="radio" id="not-sure" name="rec-opt" value="not_sure" />
-          <label for="not-sure">Not sure</label>
+          <label for="not-sure" class="label-inline">Not sure</label>
         </fieldset>
 
         <label for="fcc_dropdown">What do you like most in FCC:</label>
@@ -94,7 +101,8 @@
             name="improve"
             value="front-end"
           />
-          <label for="front-end">Front-end Projects</label><br />
+          <label for="front-end" class="label-inline">Front-end Projects</label
+          ><br />
 
           <input
             type="checkbox"
@@ -102,7 +110,8 @@
             name="improve"
             value="back-end"
           />
-          <label for="back-end">Back-end Projects</label><br />
+          <label for="back-end" class="label-inline">Back-end Projects</label
+          ><br />
 
           <input
             type="checkbox"
@@ -110,7 +119,9 @@
             name="improve"
             value="data-visualization"
           />
-          <label for="data-visualization">Data Visualization</label><br />
+          <label for="data-visualization" class="label-inline"
+            >Data Visualization</label
+          ><br />
 
           <input
             type="checkbox"
@@ -118,7 +129,7 @@
             name="improve"
             value="challenges"
           />
-          <label for="challenges">Challenges</label><br />
+          <label for="challenges" class="label-inline">Challenges</label><br />
 
           <input
             type="checkbox"
@@ -126,7 +137,9 @@
             name="improve"
             value="open-source-community"
           />
-          <label for="open-source-community">Open Source Community</label><br />
+          <label for="open-source-community" class="label-inline"
+            >Open Source Community</label
+          ><br />
 
           <input
             type="checkbox"
@@ -134,10 +147,12 @@
             name="improve"
             value="gitter-help-rooms"
           />
-          <label for="gitter-help-rooms">Gitter help rooms</label><br />
+          <label for="gitter-help-rooms" class="label-inline"
+            >Gitter help rooms</label
+          ><br />
 
           <input type="checkbox" id="videos" name="improve" value="videos" />
-          <label for="videos">Videos</label><br />
+          <label for="videos" class="label-inline">Videos</label><br />
 
           <input
             type="checkbox"
@@ -145,13 +160,14 @@
             name="improve"
             value="city-meetups"
           />
-          <label for="city-meetups">City Meetups</label><br />
+          <label for="city-meetups" class="label-inline">City Meetups</label
+          ><br />
 
           <input type="checkbox" id="wiki" name="improve" value="wiki" />
-          <label for="wiki">Wiki</label><br />
+          <label for="wiki" class="label-inline">Wiki</label><br />
 
           <input type="checkbox" id="forum" name="improve" value="forum" />
-          <label for="forum">Forum</label><br />
+          <label for="forum" class="label-inline">Forum</label><br />
 
           <input
             type="checkbox"
@@ -159,21 +175,21 @@
             name="improve"
             value="additional-courses"
           />
-          <label for="additional-courses">Additional Courses</label>
+          <label for="additional-courses" class="label-inline"
+            >Additional Courses</label
+          >
         </fieldset>
 
         <label for="comment">Any Comments or Suggestions?</label>
         <textarea
           id="comment"
           name="user-comment"
-          rows="8"
-          cols="80"
           placeholder="Enter your comment here..."
-        ></textarea>
+        ></textarea
+        ><br />
 
         <button type="submit" id="submit" value="submit">Submit</button>
       </form>
     </main>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
