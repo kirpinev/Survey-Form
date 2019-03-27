@@ -157,6 +157,7 @@ button:hover {
     display: table;
     clear: both;
   }
+
   select {
     margin-top: 10px;
   }
